@@ -1,0 +1,2 @@
+# nmb
+blog of personalilty

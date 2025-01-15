@@ -1,0 +1,11 @@
+content/posts
+*.tar.gz
+
+# themes
+#themes/*
+#!themes/.gitkeep
+
+# hugo
+public
+resources
+.hugo_build.lock

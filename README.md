@@ -1,4 +1,7 @@
 # nmb
-blog of personalilty
 
-lzh
+
+## 发布
+
+bash
+./upload.sh

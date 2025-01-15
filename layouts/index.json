@@ -1,0 +1,14 @@
+{
+    "host": "i68.ltd",
+    "key": "785fe9564abc4d7c992ef3817d9a109a",
+    "keyLocation": "https://i68.ltd/785fe9564abc4d7c992ef3817d9a109a.txt",
+
+    {{ $index_time := (time now).AddDate 0 -3 0 }}
+    "urlList": [
+        {{ range where .Site.RegularPages "Type" "posts" }}
+        {{ if ge (time .Date) $index_time }}
+        "{{ .Permalink }}",
+        {{ end }}
+        {{ end }}
+    ]
+}

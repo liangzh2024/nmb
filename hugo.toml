@@ -1,0 +1,88 @@
+baseURL = "https://nmb.i68.ltd/"
+defaultContentLanguage = "zh"
+languageCode = "zh-Hans"
+title = "柠檬杯随笔"
+theme = "dream"
+
+enableGitInfo = false
+enableRobotsTXT = true
+
+hasCJKLanguage = true
+
+
+[markup]
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+[markup.goldmark.parser.attribute]
+block = true
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+noClasses = false
+
+# [taxonomies]
+# category = "categories"
+# tag = "tags"
+# series = "series"
+
+[params]
+# zenMode = true
+
+lightTheme = "emerald"
+darkTheme = "forest"
+
+
+images = ["me/background.jpg"]
+
+author = "柠檬杯"
+description = "柠檬杯随笔"
+avatar = "me/logo.png"
+headerTitle = "柠檬杯随笔"
+motto = "临渊羡鱼不如退而结网"
+
+# footerBottomText = ""
+
+rss = true
+
+# valine = true
+# LEANCLOUD_APP_ID = ""
+# LEANCLOUD_APP_KEY = ""
+
+# waline = true
+# walineServer = ""
+
+siteStartYear = 2024
+
+favicon = "favicon.ico"
+
+# Syntax highlighting
+customSyntaxHighlighting = true
+
+# options
+stickyNav = true
+reorderNavItems = ["search", "github", "posts", "categories", "tags", "rss"]
+collapseNavItems = ["posts", "categories", "tags", "rss"]
+# noDefaultSummaryCover = true
+showTableOfContents = true
+showSummaryCoverInPost = true
+showPrevNextPost = true
+# reorderShares = ["x", "facebook", "whatsapp"]
+
+
+[params.advanced]
+customCSS = ["css/custom.css"]
+# customJS = []
+
+[params.experimental]
+jsDate = true
+jsDateFormat = "yyyy年MM月dd日"
+# jsDateFormat = "yyyy年MM月dd日，cccc"
+
+
+[outputs]
+  home = ['html', 'rss','json']
+  page = ['html']
+  rss = ['rss']
+  section = ['html', 'rss']
+  taxonomy = ['html', 'rss']
+  term = ['html', 'rss']
